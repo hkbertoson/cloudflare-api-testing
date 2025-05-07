@@ -1,5 +1,11 @@
 name = "cloudflare-api-testing"
+main = "./dist/_worker.js/index.js"
 compatibility_date = "2025-05-07"
 
+
 [assets]
+binding = "ASSETS"
 directory = "./dist"
+
+[observability]
+enabled = true

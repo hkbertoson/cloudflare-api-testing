@@ -7,6 +7,7 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
 	adapter: cloudflare(),
 	security: {
-		checkOrigin: false,
+		// Change to false to have API work
+		checkOrigin: true,
 	},
 });

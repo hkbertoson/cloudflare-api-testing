@@ -1,5 +1,6 @@
 ---
-
+import Loading from '../components/Loading.astro';
+import Server from '../components/Server.astro';
 ---
 
 <html lang="en">
@@ -11,6 +12,8 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Server server:defer>
+			<Loading slot="fallback" />
+		</Server>
 	</body>
 </html>
